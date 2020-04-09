@@ -6,16 +6,28 @@
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  color: var(--dark-violet);
 }
 
 h1, h2, h3 {
   font-family: sans-serif;
 }
 
+.btn {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1;
+}
+
 .container {
+  padding: 20px;
   margin: 0 auto;
   max-width: 100%;
   width: 1200px;
@@ -25,6 +37,42 @@ h1, h2, h3 {
   display: flex;
 }
 
-.flex > * {
+.flex > div {
   flex: 1;
+}
+
+
+ /* Nav styling  */
+nav {
+
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav li a {
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+ /*Header styling */
+header {
+
+}
+
+ /*Section styling */
+section {
+
+}
+
+ /*footer styling */
+footer {
+
 }
