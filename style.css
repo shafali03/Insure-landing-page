@@ -22,16 +22,25 @@ h1, h2, h3 {
   font-family: sans-serif;
 }
 
-h1 {
+h1, h2 {
   font-size: 4em;
   position: relative;
   letter-spacing: 2px;
   line-height: 1;
-  margin: 0;
   padding-top: 50px;
 }
 
-h1::before {
+h3 {
+  font-size: 2.5em;
+}
+
+p {
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  /* font-size: 18px; */
+}
+
+.line-top::before {
   content: '';
   background-color: #fff;
   position: absolute;
@@ -39,9 +48,15 @@ h1::before {
   left: 0;
   height: 1px;
   width: 150px;
-
 }
 
+.line-violet::before {
+  background-color: var(--dark-violet);
+}
+
+h2::before {
+  background-color: var(--dark-violet); 
+}
 .btn {
   background-color: transparent;
   border: 2px solid white;
@@ -61,11 +76,13 @@ h1::before {
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
-  width: 1200px;
+  width: 1200px; 
 }
 
 .flex {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .flex > div {
@@ -127,13 +144,41 @@ header::before {
   width: 100%;
 }
 
-.family {
+.family-image {
   margin-bottom: -250px;
 }
 
  /*Section styling */
-section {
+.bg-violet {
+  background-color: var(--dark-violet);
+  color: #fff;
+  padding: 70px;
+  position: relative;
+  margin: 100px auto;
+}
 
+.bg-violet::before {
+  content: '';
+  background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-violet h2 {
+  color: #fff;
+  font-size: 3em;
+  padding: 0;
+  width: 75%;
+}
+
+.title {
+  margin-top: 80px;
 }
 
  /*footer styling */
