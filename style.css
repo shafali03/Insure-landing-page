@@ -60,8 +60,9 @@ h2::before {
 }
 .btn {
   background-color: transparent;
+  display: inline-block;
   border: 2px solid white;
-  padding: 10px 25px;
+  padding: 15px 25px;
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
@@ -200,7 +201,7 @@ footer ul {
   list-style-type: none;
 }
 
-footer ul.flex li {
+footer ul.flex li:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -219,3 +220,23 @@ footer li a {
   margin-bottom: 30px;
 }
 
+
+@media screen and (max-width: 760px) {
+  body {
+    text-align: center;
+  }
+
+  footer {
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-size: 100% auto;
+    background-position: top center;
+  }
+
+  footer .flex div {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}
